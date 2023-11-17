@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>臺中市政府全球資訊網</title>
+	<link href="css/design.css" rel="stylesheet" type="text/css">
+	<link media="print" href="css/print.css" rel="stylesheet" type="text/css">
+	<!--變換字型大小-->
+	<link rel="stylesheet" type="text/css" href="css/fontS.css" title="small" data-cat="font" />
+	<link rel="alternate stylesheet" type="text/css" href="css/fontM.css" title="medium" data-cat="font" />
+	<link rel="alternate stylesheet" type="text/css" href="css/fontL.css" title="large" data-cat="font" />
+	<!-- <styleSwitcher cat="font"></styleSwitcher> -->
+	<script src="js/styleswitcher.js"></script>
+	<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+	<!-- 災害警示資訊 -->
+	<link type="text/css" rel="stylesheet" href="https://alerts.ncdr.nat.gov.tw/CSS/customBanner/170X350.css">
+</head>
+
+<body><a class="goCenter" href="#center" tabindex="0">按 Enter 到主內容區</a>
+	<aside class="sidebar">
+		<div class="sidebarCtrl"><a href="#">關閉</a></div>
+	</aside>
+	<div class="main">
+		<header class="header"><a class="accesskey" id="aU" href="#aU" accesskey="U" title="上方標題區">:::</a>
+			<h1><a href="mp.html"><img src="images/h1.png" alt="臺中市政府"></a></h1>
+			<section class="search">
+				<form><label for="keyword">站內搜尋</label>
+					<input id="keyword" type="text" value="" placeholder="請輸入關鍵字" accesskey="S" />
+					<input type="submit" value="查詢" title="查詢">
+					<a href="#" class="btnAdv">進階搜尋</a>
+				</form>
+				<div class="keywordHot">
+					<ul>
+						<li><a href="#">福利</a></li>
+						<li><a href="#">臺中花博</a></li>
+					</ul>
+				</div>
+			</section>
+			<nav class="navigation">
+				<ul>
+					<li><a href="#">網站導覽</a></li>
+					<li><a href="#">English</a></li>
+					<li><a href="#">兒童版</a></li>
+					<li><a href="#">機關通訊錄</a></li>
+					<li><a href="#">常見問答</a></li>
+				</ul>
+			</nav>
+			<div class="fontSize"><span>字級</span>
+				<button class="small here" onclick="setActiveStyleSheet('small', 'font')">小</button>
+				<button class="medium" onclick="setActiveStyleSheet('medium', 'font')">中</button>
+				<button class="large" onclick="setActiveStyleSheet('large', 'font')">大</button>
+			</div>
+			<noscript> 您的瀏覽器不支援 JavaScript 或 JavaScript已停用，<br> 請按鍵盤<span class="key">Ctrl</span>+<span
+					class="key">＋</span>放大瀏覽字體，<span class="key">Ctrl</span>+<span class="key">－</span>縮小瀏覽字體 </noscript>
+			<div class="sidebarCtrl"><a href="#">側欄選單</a></div>
+			<div class="searchCtrl"><a href="#">查詢</a></div>
+			<div id="iframewrapper" class="iframewrapper" title="全站搜尋">
+				<!-- style="display:block" 模擬查詢結果 -->
+				<div class="closeiframe"><a onclick="closesearch()" onkeypress="closesearch()"><img src="images/searchClose.png"
+							alt="關閉視窗"></a></div>
+				<iframe title="全站搜尋結果" class="iframeweb" src="x_searchList.html"></iframe>
+			</div>
+			<nav class="menu">
+				<!-- class="menu" or class="megaMenu" -->
+				<ul>
+					<li><a href="#">公告訊息</a>
+						<ul>
+							<li><a href="#">最新消息</a></li>
+							<li><a href="lp_schedule.html">活動行事曆</a></li>
+							<li><a href="#">機關徵才</a></li>
+							<li><a href="#">推薦專區</a></li>
+							<li><a href="#">招標資訊</a></li>
+						</ul>
+					</li>
+					<li><a href="#">關於我們</a></li>
+					<li><a href="#">資訊業務</a>
+						<ul>
+							<li><a href="#">重點業務介紹</a></li>
+							<li><a href="#">資訊推動計畫與成果</a></li>
+							<li><a href="#">施政白皮書</a>
+								<ul>
+									<li><a href="#">第三層選單測試</a>
+										<ul>
+											<li><a href="#">第四層選單測試</a></li>
+											<li><a href="#">第四層選單測試</a></li>
+										</ul>
+									</li>
+									<li><a href="#">104年</a></li>
+									<li><a href="#">103年</a></li>
+								</ul>
+							</li>
+							<li><a href="#">地理資訊系統</a></li>
+							<li><a href="#">檔案下載</a></li>
+							<li><a href="#">軟體工具下載</a></li>
+							<li><a href="#">年度施政計畫</a></li>
+							<li><a href="#">會計月報</a></li>
+							<li><a href="#">公務統計方案</a></li>
+						</ul>
+					</li>
+					<li><a href="#">便民服務</a></li>
+					<li><a href="#">相關連結</a></li>
+					<li><a href="#">其他項目</a>
+						<ul>
+							<li><a href="#">第二層選單</a>
+								<ul>
+									<li><a href="#">第三層選單</a></li>
+									<li><a href="#">第三層選單</a></li>
+									<li><a href="#">第三層選單測試</a>
+										<ul>
+											<li><a href="#">第四層選單測試</a></li>
+											<li><a href="#">第四層選單測試</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">第二層選單測試</a></li>
+						</ul>
+					</li>
+					<li><a href="#">網站連結</a></li>
+					<li><a href="#">市府各機關</a></li>
+				</ul>
+			</nav>
+			<!-- <div class="flowerCountdown"><iframe src="https://www.taichung.gov.tw/countdown/countdown.html"></iframe></div>
+<div class="flowerCountdownMobil"><iframe src="https://www.taichung.gov.tw/countdown/countdownMobile.html"></iframe></div> -->
+			<!-- <div class="flowerCountdownMobil"><iframe title="花博倒數天數" src="http://www.2018floraexpo.tw/CountDown/?layout=mobile"></iframe></div> -->
+			<!--  marginheight="0" marginwidth="0" frameborder="0" scrolling="no" allowtransparency="true" -->
+		</header>
+		<div class="center" id="center">
+			<a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+			<section class="adloop">
+				<div><a href="#" title="連結目標頁內容說明"><img src="publicData/adloop1.jpg" alt="圖說1"></a></div>
+				<div><a href="#" title="連結目標頁內容說明"><img src="publicData/adloop2.jpg" alt="圖說2"></a></div>
+				<div><a href="#" title="連結目標頁內容說明"><img src="publicData/adloop3.jpg" alt="圖說3"></a></div>
+				<div><a href="#" title="連結目標頁內容說明"><img src="publicData/adloop4.jpg" alt="圖說4"></a></div>
+			</section>
+			<!-- 
+				<section class="adloop" title="可使用鍵盤左、右方向鍵來切換輪播圖片">
+					<div><a href="cp.html"><img src="publicData/adloop1.jpg" alt="台中市民免費電腦課程" /></a></div>
+					<div><a href="lp.html"><img src="publicData/adloop2.jpg" alt="替代文字１" /></a></div>
+					<div><a href="xp.html"><img src="publicData/adloop3.jpg" alt="替代文字２" /></a></div>
+					<div><a href="xxp.html"><img src="publicData/adloop4.jpg" alt="替代文字３" /></a></div>
+					<div><a href="xxxp.html"><img src="publicData/adloop5.jpg" alt="替代文字４" /></a></div>
+				</section>
+			-->
+			<noscript><a href="lp.html">請點選此連結看詳細內容</a></noscript>
+			<section class="express">
+				<ul>
+					<li class="weather2 sunnyCloudy">
+						<span class="temperature">25~35 &deg;C </span>
+						<span class="precipitation">降雨機率<em>30%</em></span>
+						<span class="pm25"><a href="http://taqm.epb.taichung.gov.tw" target="_blank"
+								title="開新視窗，連結至臺中市政府環境保護局即時空氣品質">PM2.5</a></span>
+					</li>
+					<li><a href="#"><img src="publicData/exp_tour.jpg" alt="觀光旅遊"></a></li>
+					<!-- <li><a href="#"><img src="publicData/每日空氣品質預報-1.png" alt="每日空氣品質預報"></a></li> -->
+					<!-- <li><a href="#"><img src="publicData/地震banner-1a.jpg" alt="地震主題專區"></a></li> -->
+				</ul>
+				<ul class="mobile">
+					<!-- <li><a href="#"><img src="publicData/每日空氣品質預報-2.png" alt="每日空氣品質預報"></a></li> -->
+					<li><a href="#"><img src="publicData/exp_tourM.jpg" alt="觀光旅遊"></a></li>
+					<li><a href="../bureauG2/mp_豪雨.html"><img src="publicData/豪雨banner-2.jpg" alt="豪雨專區" /></a></li>
+				</ul>
+			</section>
+			<section class="iconPromote">
+				<ul>
+					<li><a href="#"><img src="publicData/iconG3calendar.png" alt="">活動行事曆</a></li>
+					<li><a href="#"><img src="publicData/iconG3welfare.png" alt="">福利及照護</a></li>
+					<li><a href="#"><img src="publicData/iconG3eServices.png" alt="">常用便民系統</a></li>
+					<li><a href="#"><img src="publicData/icons203.png" alt="">謠言澄清</a></li>
+					<li><a href="#"><img src="publicData/iconG3invest.png" alt="">投資臺中</a></li>
+					<li><a href="#"><img src="publicData/iconG3job.png" alt="">機關徵才</a></li>
+				</ul>
+			</section>
+			<section class="floraExpo"><a href="../bureauG2/mp_豪雨.html" target="_blank"><img src="publicData/豪雨banner-1b.jpg"
+						alt="豪雨主題專區" /></a></section>
+			<section class="threeBanners">
+				<ul>
+					<li><a href="#"><img src="publicData/每日空氣品質預報-2.png" alt="每日空氣品質預報"></a></li>
+					<li><a href="#"><img src="publicData/市政新聞jpg.jpg" alt="市政新聞"></a></li>
+					<li><a href="#"><img src="publicData/新聞照片jpg.jpg" alt="新聞照片"></a></li>
+				</ul>
+			</section>
+			<!-- <section class="twoBanners">
+  <ul>
+    <li><a href="#"><img src="publicData/市政新聞jpg.jpg" alt="市政新聞"></a></li>
+    <li><a href="#"><img src="publicData/新聞照片jpg.jpg" alt="新聞照片"></a></li>
+  </ul>
+</section> -->
+			<section class="newsCard">
+				<h2>市政新聞</h2>
+				<ul>
+					<li class="cateA"><a href="#"><span class="cate">最新消息</span><span class="time">.5 小時</span>
+							<h3>104年5月11至12日臺中市免書證免謄本便民服務上半年度系統教育訓練系統</h3>
+							<p>104年第一次臺中市免書證免謄本便民服務系統教育訓練，於5月11日至5月12日舉辦3場教育訓練，並於5月12日下午16時圓滿結束。
+								為使各機關單位管理者更了解系統如何新增使用者、查詢資料及其他操作上的問題，邀請恆鈦科技股份有限公司系統分析師梁祐睿先生擔任講師，課程中講師示範了如何新增及查詢上的注意事項及系統版本相容性等問題，並開放試用版系統練習，讓參加的同仁對於系統共進一步的了解。
+							</p>
+						</a></li>
+					<li class="cateB"><a href="#"><span class="cate">推薦專區</span><span class="time">1.5 小時</span>
+							<figure><img src="publicData/newsPhoto01.jpg" alt="市府同仁合照"></figure>
+							<h3>臺中榮獲2013全球智慧城市首獎實至名歸</h3>
+							<p>
+								臺中市一直以『世界的大臺中』接軌國際，積極建設智慧城市，今(2013)年度榮獲智慧城市論壇(ICF)國際組織肯定，在連續2年進入全球智慧頂尖城市後，一舉拿下年度首獎。今(2013)年入選全球智慧城市論壇（ICF）的七大城市各自有代表性的智慧城市風格及創新表現，而臺中市管轄面積廣大、人口眾多，透過產官學研各界的協同合作，運用資通訊科技輔助經濟發展、產業升級，更創造便利而幸福的生活，充分展現智慧城市｢寬頻連結｣、｢數位內涵｣、｢知識工作力｣、｢創新｣、｢行銷推廣｣五大指標，尤其在寬頻佈建、市民服務、產業升級及農業創新技術的應用上，創造許多就業機會，也有效降低失業率，更是符合今年度「創新與就業」的主題表現，實至名歸
+							</p>
+						</a></li>
+					<li class="cateC"><a href="#">
+							<h3>臺中市政府資訊中心104年度辦理公告金額以上採購案件預定招標時程表</h3>
+							<p>臺中市政府資訊中心104年度辦理公告金額以上採購案件預定招標時程表 項次 採購案名稱 預算金額 採購標的</p>
+						</a></li>
+					<li class="cateD"><a href="#"><span class="cate">機關徵才</span><span class="time">2 天</span>
+							<h3>臺中市政府交通局徵才公告</h3>
+							<p>
+								職稱：技佐。人員區分：一般人員。官職等：委任第四職等至第五職等。職系：土木工程名額：1。有效期間(訖)：2015-09-21。資格條件：(一)大專以上學校畢業。(二)普考以上或相當等級考試及格，具土木工程職系法定任用資格之現職公務人員。(三)無限制調任情事者。(四)無公務人員任用法第26、28條及公務人員陞遷法第12條各款情事之一者。
+							</p>
+						</a></li>
+				</ul>
+				<div class="more"><a href="#">更多訊息</a></div>
+				<!--./theme-->
+			</section>
+			<div class="row3">
+				<section class="contact">
+					<ul>
+						<li><a href="#">如何來市府</a></li>
+						<li><a href="#">機關通訊錄</a></li>
+						<li><a href="#">參觀導覽</a></li>
+						<li><a href="#">1999市民一碼通</a></li>
+						<li class="ourFacebook"><a href="#">機關社群</a></li>
+						<li class="ourApp"><a href="#">App專區</a></li>
+					</ul>
+				</section>
+				<section class="tcGov">
+					<h2>關於市長</h2>
+					<ul>
+						<li><a href="#">市長的話</a></li>
+						<li><a href="#">市長簡歷</a></li>
+						<li><a href="#">市長信箱</a></li>
+						<li><a href="#">市長行程</a></li>
+						<li><a href="#">市長政見</a></li>
+						<li><a href="#">臉書粉專</a></li>
+					</ul>
+				</section>
+				<section class="tcGov">
+					<h2>市政資訊</h2>
+					<ul>
+						<li><a href="#">市政公報</a></li>
+						<li><a href="#">中程施政計畫</a></li>
+						<li><a href="#">施政白皮書</a></li>
+						<li><a href="#">年度施政績效報告</a></li>
+					</ul>
+				</section>
+			</div>
+			<section class="icons">
+				<ul>
+					<li><a href="#"><img src="publicData/icon02.png" alt="">新聞照片</a></li>
+					<li><a href="#"><img src="publicData/icons_bike.png" alt="">公共自行車<br>(ibike)</a></li>
+					<li><a href="#"><img src="publicData/icon_mail.png" alt="">市長信箱</a></li>
+					<li><a href="#"><img src="publicData/icon07.png" alt="">1999一碼通</a></li>
+					<li><a href="#"><img src="publicData/icons04.png" alt="">公車查詢</a></li>
+					<li><a href="#"><img src="publicData/icons07.png" alt="">市府及圖書館電子書</a></li>
+					<li><a href="#"><img src="publicData/icons01.png" alt="">台中好生活</a></li>
+					<li><a href="#"><img src="publicData/icons09.png" alt="">臺中新聞</a></li>
+					<li><a href="#"><img src="publicData/icons09.png" alt="">臺中新聞</a></li>
+					<li><a href="#"><img src="publicData/icons09.png" alt="">臺中新聞</a></li>
+				</ul>
+				<!--./icons-->
+			</section>
+			<div class="row5">
+				<section class="statistics"><img src="publicData/st.jpg" alt="" />
+					<ul>
+						<li><a href="#">公務統計</a></li>
+						<li><a href="#">人口統計</a></li>
+						<li><a href="#">調查統計</a></li>
+						<li><a href="#">各項捐補助明細</a></li>
+					</ul>
+				</section>
+				<section class="service"><img src="publicData/sv.jpg" alt="" />
+					<ul>
+						<li><a href="#">戶政N加e跨機關便民服務</a></li>
+						<li><a href="#">法律扶助</a></li>
+						<li><a href="#">商業登記</a></li>
+						<li><a href="#">大臺中人力資源網</a></li>
+					</ul>
+				</section>
+			</div>
+			<section class="icons g2">
+				<ul>
+					<li><a href="#"><img src="publicData/icons201.png" alt="">影音專區</a></li>
+					<li><a href="#"><img src="publicData/icons_city.png" alt="">台中都市發展願景</a></li>
+					<li><a href="#"><img src="publicData/icons202.png" alt="">公聽會</a></li>
+					<li><a href="#"><img src="publicData/icon04.png" alt="">資料開放平臺<br>(OpenData)</a></li>
+					<li><a href="#"><img src="publicData/icons204.png" alt="">性別議題專區</a></li>
+					<li><a href="#"><img src="publicData/icons208.png" alt="">遊說專區</a></li>
+					<li><a href="#"><img src="publicData/icons206.png" alt="">政府公開資訊</a></li>
+					<li><a href="#"><img src="publicData/icons205.png" alt="">公務人員協會</a></li>
+					<li><a href="#"><img src="publicData/icons09.png" alt="">市府電子報</a></li>
+				</ul>
+				<!--./icons g2-->
+			</section>
+			<section class="newsCard">
+				<h2>機關訊息</h2>
+				<ul>
+					<li class="cateA"><a href="#"><span class="cate">最新消息</span><span class="time">2017-05-03</span>
+							<h3>104年5月11至12日臺中市免書證免謄本便民服務上半年度系統教育訓練系統</h3>
+							<p>104年第一次臺中市免書證免謄本便民服務系統教育訓練，於5月11日至5月12日舉辦3場教育訓練，並於5月12日下午16時圓滿結束。
+								為使各機關單位管理者更了解系統如何新增使用者、查詢資料及其他操作上的問題，邀請恆鈦科技股份有限公司系統分析師梁祐睿先生擔任講師，課程中講師示範了如何新增及查詢上的注意事項及系統版本相容性等問題，並開放試用版系統練習，讓參加的同仁對於系統共進一步的了解。
+							</p>
+						</a></li>
+					<li class="cateB"><a href="#"><span class="cate">推薦專區</span><span class="time">2017-05-03</span>
+							<figure><img src="publicData/newsPhoto01.jpg" alt="臺中榮獲2013全球智慧城市首獎實至名歸"></figure>
+							<h3>臺中榮獲2013全球智慧城市首獎實至名歸</h3>
+							<p>
+								臺中市一直以『世界的大臺中』接軌國際，積極建設智慧城市，今(2013)年度榮獲智慧城市論壇(ICF)國際組織肯定，在連續2年進入全球智慧頂尖城市後，一舉拿下年度首獎。今(2013)年入選全球智慧城市論壇（ICF）的七大城市各自有代表性的智慧城市風格及創新表現，而臺中市管轄面積廣大、人口眾多，透過產官學研各界的協同合作，運用資通訊科技輔助經濟發展、產業升級，更創造便利而幸福的生活，充分展現智慧城市｢寬頻連結｣、｢數位內涵｣、｢知識工作力｣、｢創新｣、｢行銷推廣｣五大指標，尤其在寬頻佈建、市民服務、產業升級及農業創新技術的應用上，創造許多就業機會，也有效降低失業率，更是符合今年度「創新與就業」的主題表現，實至名歸
+							</p>
+						</a></li>
+					<li class="cateC"><a href="#"><span class="cate">訊息來源或單位</span><span class="time">2017-05-02</span>
+							<h3>臺中市政府資訊中心104年度辦理公告金額以上採購案件預定招標時程表</h3>
+							<p>臺中市政府資訊中心104年度辦理公告金額以上採購案件預定招標時程表 項次 採購案名稱 預算金額 採購標的</p>
+						</a></li>
+					<li class="cateD"><a href="#"><span class="cate">機關徵才</span><span class="time">2017-05-02</span>
+							<h3>臺中市政府交通局徵才公告</h3>
+							<p>
+								職稱：技佐。人員區分：一般人員。官職等：委任第四職等至第五職等。職系：土木工程名額：1。有效期間(訖)：2015-09-21。資格條件：(一)大專以上學校畢業。(二)普考以上或相當等級考試及格，具土木工程職系法定任用資格之現職公務人員。(三)無限制調任情事者。(四)無公務人員任用法第26、28條及公務人員陞遷法第12條各款情事之一者。
+							</p>
+						</a></li>
+				</ul>
+				<div class="more"><a href="#">更多訊息</a></div>
+				<!--./newsCard-->
+			</section>
+			<section class="infographics">
+				<div class="chart">
+					<div id="chart_div"></div>
+					<p>附註：105年物價指數上升了1.3<br />資料來源：臺中市政府</p>
+				</div>
+				<div class="chart">
+					<div id="chart_div1"></div>
+					<p>附註：105年物價指數上升了1.3<br />資料來源：臺中市政府</p>
+				</div>
+				<div class="more"><a href="#">更多圖表</a></div>
+			</section>
+			<section class="adBlockH">
+				<div class="adSlide">
+					<ul>
+						<li><a href="#"><img src="publicData/adSlide01.jpg" alt="替代文字1" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide02.jpg" alt="替代文字2" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide03.jpg" alt="替代文字3" /></a></li>
+						<li><a href="cp.html"><img src="publicData/adSlide04.jpg" alt="替代文字4" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide05.jpg" alt="替代文字5" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide06.jpg" alt="替代文字6" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide07.jpg" alt="替代文字7" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide08.jpg" alt="替代文字8" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide09.jpg" alt="替代文字9" /></a></li>
+						<li><a href="#"><img src="publicData/adSlide10.jpg" alt="替代文字10" /></a></li>
+					</ul>
+				</div>
+				<div class="arbtn left" id="adBlockH_btn_prev"></div>
+				<div class="arbtn right" id="adBlockH_btn_next"></div>
+				<div class="more"><a href="#">更多廣告</a></div>
+			</section>
+			<!--/.center-->
+		</div>
+		<footer class="footer">
+			<a class="accesskey" href="#aF" id="aF" accesskey="F" title="頁尾區">:::</a>
+			<div class="fatfootCtrl"><button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合"
+					class="btn btn-fatfooter">收合</button></div>
+			<nav>
+				<ul>
+					<li><a href="#">熱門公告</a>
+						<ul>
+							<li><a href="#">市政新聞</a></li>
+							<li><a href="#" title="另開視窗，連結" target="_blank">新聞照片</a></li>
+							<li><a href="#">臺中市政府公報</a></li>
+							<li><a href="#">機關訊息</a></li>
+							<li><a href="#">活動行事曆</a></li>
+							<li><a href="#">公聽會訊息</a></li>
+							<li><a href="#">機關徵才</a></li>
+							<li><a href="#">土地徵收計畫書</a></li>
+						</ul>
+					</li>
+					<li><a href="#">關於市府</a>
+						<ul>
+							<li><a href="#">關於市長</a></li>
+							<li><a href="#">市府成員</a></li>
+							<li><a href="#">市府組織表</a></li>
+							<li><a href="#">機關首長</a></li>
+							<li><a href="#">府徽介紹</a></li>
+							<li><a href="#">市府交通位置</a></li>
+							<li><a href="#">市政會議紀錄</a></li>
+							<li><a href="#">市民感謝區</a></li>
+							<li><a href="#">最新市債訊息</a></li>
+						</ul>
+					</li>
+					<li><a href="#">認識臺中</a>
+						<ul>
+							<li><a href="#">歷史沿革</a></li>
+							<li><a href="#">二十九區行政區</a></li>
+							<li><a href="#">市樹、花、鳥介紹</a></li>
+							<li><a href="#" title="另開視窗，連結「投資臺中」" target="_blank">投資臺中</a></li>
+							<li><a href="#">國際姊妹市暨友好城市</a></li>
+							<li><a href="#">本市相關雙語詞彙</a></li>
+						</ul>
+					</li>
+					<li><a href="#">市民服務</a>
+						<ul>
+							<li><a href="#">臺中市政府服務中心</a></li>
+							<li><a href="#">福利及照護</a></li>
+							<li><a href="#">便民服務系統</a></li>
+							<li><a href="#">就業及創業</a></li>
+							<li><a href="#" title="另開視窗，連結「消保園地」" target="_blank">消保園地</a></li>
+							<li><a href="#" title="另開視窗，連結「消費爭議申訴」" target="_blank">消費爭議申訴</a></li>
+							<li><a href="#">調解行政</a></li>
+							<li><a href="#">法律扶助(法律諮詢)</a></li>
+							<li><a href="#" title="另開視窗，連結「臺中市法規資料庫」" target="_blank">臺中市法規資料庫</a></li>
+							<li><a href="#" title="另開視窗，連結「全國法規資料庫」" target="_blank">全國法規資料庫</a></li>
+						</ul>
+					</li>
+					<li><a href="#">網站連結</a>
+						<ul>
+							<li><a href="#" title="另開視窗，連結「臺中市議會」" target="_blank">臺中市議會</a></li>
+							<li><a href="#">市府所屬各機關</a></li>
+							<li><a href="#">各縣市政府網站</a></li>
+							<li><a href="#" title="另開視窗，連結「各級學校網站」" target="_blank">各級學校網站</a></li>
+							<li><a href="#">政府相關網站</a></li>
+							<li><a href="#">民間團體網站</a></li>
+							<li><a href="#">社區大學網站</a></li>
+						</ul>
+					</li>
+					<li><a href="#">市府各機關</a>
+						<ul>
+							<li><a href="#">一級機關</a></li>
+							<li><a href="#">二級機關</a></li>
+							<li><a href="#">區公所</a></li>
+							<li><a href="#">戶政事務所</a></li>
+							<li><a href="#">地政事務所</a></li>
+							<li><a href="#">衛生所</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<ul class="qrcode">
+				<li><a href="#"><img src="publicData/qrLINE-taichung1.png" alt="臺中市政府Line官方帳號"></a></li>
+				<!-- <li><a href="#"><img src="publicData/qrWeb1021120.png" alt="臺中市政府全球資訊網"></a></li> -->
+				<!-- <li><iframe title="NCDR災害示警元件" src="https://alerts.ncdr.nat.gov.tw/OutSource/Taichung/CountryCAPInfo.html" height="230" width="180"></iframe></li> -->
+				<!-- 20200303 更改套版 -->
+				<!-- 20210428 再次更改套版
+       <li>
+      <div id="capInfo170350_Normal_66">
+        <ul id="portfolio">
+          <li>
+            <div class="alertCAP_forTCC">
+              <h3 class="alertCAP_forTCC_header bannerGreen"><img alt="國家災害防救科技中心" title="國家災害防救科技中心(另開新視窗)" src="https://alerts.ncdr.nat.gov.tw/Images/banner_logo.jpg">災害示警資訊</h3>
+              <div class="alertCAP_forTCC_content">
+                <span class="alertCAP_forTCC_dressup bannerGreen"></span>
+                <span class="alertCAP_forTCC_dressdown bannerGreen"></span>
+                <h4 class="alertCAP_forTCC_title"><img title="現無示警" alt="現無示警" src="https://alerts.ncdr.nat.gov.tw/Images/todayIsGoodDay.png"> <br> 現無示警 </h4>
+                <div class="alertCAP_forTCC_con">
+                  <div class="alertCAP_forTCC_time"> 2020-03-03, 10:34<br>更新 </div>現在沒有示警。
+                </div>
+                <a title="連結到災害示警公開資料平台(另開新視窗)" href="https://alerts.ncdr.nat.gov.tw" class="alertCAP_forTCC_more bannerGreen" target="_blank">more</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li> -->
+				<!-- 20240428 版 -->
+				<li>
+					<!-- <script type="text/javascript" src="https://alerts.ncdr.nat.gov.tw/temp/StaticFiles/Immediately/CapInfoNormal_66_170350.js"></script> -->
+					<!--   如果你的網站不需要SSL驗證請引用底下前置詞為http 的script資源   -->
+					<script type="text/javascript"
+						src="http://alerts.ncdr.nat.gov.tw/temp/StaticFiles/Immediately/CapInfoNormal_66_170350.js"></script>
+					<div id="capInfo170350_Normal_66">
+						<ul id="portfolio" class="innerfade" style="position: relative; height: 350px;">
+							<li style="z-index: 3; position: absolute; display: none;">
+								<div class="alertCAP_forTCC">
+									<h3 class="alertCAP_forTCC_header bannerYellow" style=""><img alt="國家災害防救科技中心"
+											title="國家災害防救科技中心(另開新視窗)" src="https://alerts.ncdr.nat.gov.tw/Images/banner_logo.jpg">災害示警資訊</h3>
+									<div class="alertCAP_forTCC_content"> <span class="alertCAP_forTCC_dressup bannerYellow"
+											style=""></span> <span class="alertCAP_forTCC_dressdown bannerYellow"
+											style="border-left-color:"></span>
+										<h4 class="alertCAP_forTCC_title"><img title="道路施工" alt="道路施工"
+												src="https://alerts.ncdr.nat.gov.tw/Images/calamityIcon150Black_TC_roadConstruction.png?version=1">
+											<br> 道路施工 </h4>
+										<div class="alertCAP_forTCC_con">
+											<div class="alertCAP_forTCC_time"> 2021-04-28, 08:00<br>臺中市政府建設局 </div>現場通報有瓦斯味道、設備損壞或用戶供氣中斷
+										</div><a title="連結到災害示警公開資料平台(另開新視窗)" href="https://alerts.ncdr.nat.gov.tw/index.aspx?Mes=341922"
+											class="alertCAP_forTCC_more bannerGreen" target="_blank">more</a>
+									</div>
+								</div>
+							</li>
+							<li style="z-index: 2; position: absolute;">
+								<div class="alertCAP_forTCC">
+									<h3 class="alertCAP_forTCC_header bannerYellow" style=""><img alt="國家災害防救科技中心"
+											title="國家災害防救科技中心(另開新視窗)" src="https://alerts.ncdr.nat.gov.tw/Images/banner_logo.jpg">災害示警資訊</h3>
+									<div class="alertCAP_forTCC_content"> <span class="alertCAP_forTCC_dressup bannerYellow"
+											style=""></span> <span class="alertCAP_forTCC_dressdown bannerYellow"
+											style="border-left-color:"></span>
+										<h4 class="alertCAP_forTCC_title"><img title="道路施工" alt="道路施工"
+												src="https://alerts.ncdr.nat.gov.tw/Images/calamityIcon150Black_TC_roadConstruction.png?version=1">
+											<br> 道路施工 </h4>
+										<div class="alertCAP_forTCC_con">
+											<div class="alertCAP_forTCC_time"> 2021-04-28, 08:00<br>臺中市政府建設局 </div>地下漏水、路面漏水、路面下陷、既有用戶無水處理
+										</div><a title="連結到災害示警公開資料平台(另開新視窗)" href="https://alerts.ncdr.nat.gov.tw/index.aspx?Mes=341923"
+											class="alertCAP_forTCC_more bannerGreen" target="_blank">more</a>
+									</div>
+								</div>
+							</li>
+							<li style="z-index: 1; position: absolute; display: none;">
+								<div class="alertCAP_forTCC">
+									<h3 class="alertCAP_forTCC_header bannerYellow" style=""><img alt="國家災害防救科技中心"
+											title="國家災害防救科技中心(另開新視窗)" src="https://alerts.ncdr.nat.gov.tw/Images/banner_logo.jpg">災害示警資訊</h3>
+									<div class="alertCAP_forTCC_content"> <span class="alertCAP_forTCC_dressup bannerYellow"
+											style=""></span> <span class="alertCAP_forTCC_dressdown bannerYellow"
+											style="border-left-color:"></span>
+										<h4 class="alertCAP_forTCC_title"><img title="枯旱預警" alt="枯旱預警"
+												src="https://alerts.ncdr.nat.gov.tw/Images/calamityIcon150Black_Drought.png?version=1"> <br>
+											枯旱預警 </h4>
+										<div class="alertCAP_forTCC_con">
+											<div class="alertCAP_forTCC_time"> 2021-04-06, 00:00<br>水利署 </div>110年4月6日供水情勢（枯旱預警）通報
+											影響地區：苗栗縣、台中市及彰化縣北部地區
+										</div><a title="連結到災害示警公開資料平台(另開新視窗)" href="https://alerts.ncdr.nat.gov.tw/index.aspx?Mes=339632"
+											class="alertCAP_forTCC_more bannerGreen" target="_blank">more</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<section>
+				<ul>
+					<li><a href="#">政府網站資料開放宣告</a></li>
+					<li><a href="#">資訊安全政策</a></li>
+					<li><a href="#">隱私權政策</a></li>
+					<li><a href="#">市府交通位置</a></li>
+					<li><a href="#">各機關通訊錄</a></li>
+					<li><a href="#" title="另開視窗，連結各機關電話號碼表(PDF格式) " target="_blank">各機關電話號碼表(PDF格式)</a></li>
+				</ul>
+				<ul>
+					<li>40701臺中市西屯區臺灣大道三段99號 Tel:04-22289111．行動代表號：0910289111</li>
+					<li>臺中市民一碼通專線請撥1999(外縣市請撥：04-22203585)</li>
+					<li>若有具體檢舉、建議或陳情案件，請利用<a href="#">市長信箱</a></li>
+					<li>辦公日期：<a href="#" target="_blank">政府行政機關辦公日曆表</a></li>
+					<li>辦公時間：8:00-17:00，中午休息時間：12:00-13:00 ，彈性上下班時間：8:00-8:30、13:00-13:30、17:00-17:30</li>
+				</ul>
+				<span class="visitor">瀏覽人次(自105年5月23日改版上線起)<em>72292715</em></span><span
+					class="update">更新日期<em>2017-06-23</em></span>
+				<p class="markA"><a target="_blank" href="#" title="另開視窗，連結「無障礙網路空間服務網」"><img src="images/aplus.jpg"
+							alt="無障礙標章"></a></p>
+				<p class="egov"><a target="_blank" href="http://www.gov.tw/" title="另開視窗，連結「我的e政府」網站"><img src="images/egov.png"
+							alt="我的e政府 logo"></a></p>
+			</section>
+			<ul class="contact">
+				<li class="ourFacebook"><a href="#">機關社群</a></li>
+				<li class="ourApp"><a href="#">App專區</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!--/.main-->
+	<div class="goTop"><a href="#">至頁頂</a></div>
+	<!-- 
+ <div class="popMessage">
+  <article>
+    <p>為落實開放政府理念，讓施政透明開放，歡迎有興趣者至以下網址收看市政會議。(<strong>直播議程包括主席致詞、專案報告及主席指(裁)示事項。</strong>)<br />
+      一般民眾、行動裝置：<a href="http://vod.taichung.gov.tw/ct.asp?xItem=173715&amp;ctNode=6647&amp;mp=1" target="_blank">http://vod.taichung.gov.tw/ct.asp?xItem=173715&amp;ctNode=6647&amp;mp=1</a><br />
+      府內同仁(限桌上型電腦)：<a href="http://vod.taichung.gov.tw/sp.asp?xdurl=webcast.asp" target="_blank">http://vod.taichung.gov.tw/sp.asp?xdurl=webcast.asp</a></p>
+    <p>會議名稱：第251次市政會議。<br />
+      會議時間：105年5月23日(星期一)上午10:00。<br />
+      會議地點：大甲區公所。</p>
+    <p>發布暨聯絡單位：臺中市政府研究發展考核委員會<br />
+      聯絡電話：04-22289111分機21205</p>
+  </article>
+  <button tabindex="1" class="closePop">關閉</button>
+</div>
+ -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/rwdTable.js"></script>
+	<script src="js/jquery.jscroll.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+	<script>
+		google.charts.load('current', { packages: ['corechart'] });
+		google.charts.setOnLoadCallback(drawLineStyles);
+		var cdatas = [];
+		var cdates = [];
+
+		function inidata() {
+			cdatas = [
+				[new Date(102, 0), 102.36, '102年1月\r\n總指數: 102.36', 101.43, '102年1月\r\n總指數: 101.43'],
+				[new Date(102, 1), 102.81, '102年2月\r\n總指數: 102.81', 102.23, '102年2月\r\n總指數: 102.23'],
+				[new Date(102, 2), 101.54, '102年3月\r\n總指數: 101.54', 101.19, '102年3月\r\n總指數: 101.19'],
+				[new Date(102, 3), 101.92, '102年4月\r\n總指數: 101.92', 101.65, '102年4月\r\n總指數: 101.65'],
+				[new Date(102, 4), 102.06, '102年5月\r\n總指數: 102.06', 101.4, '102年5月\r\n總指數: 101.4'],
+				[new Date(102, 5), 102.57, '102年6月\r\n總指數: 102.57', 101.45, '102年6月\r\n總指數: 101.45'],
+				[new Date(102, 6), 102.43, '102年7月\r\n總指數: 102.43', 101.51, '102年7月\r\n總指數: 101.51'],
+				[new Date(102, 7), 102.61, '102年8月\r\n總指數: 102.61', 101.41, '102年8月\r\n總指數: 101.41'],
+				[new Date(102, 8), 104.31, '102年9月\r\n總指數: 104.31', 101.67, '102年9月\r\n總指數: 101.67'],
+				[new Date(102, 9), 103.62, '102年10月\r\n總指數: 103.62', 101.74, '102年10月\r\n總指數: 101.74'],
+				[new Date(102, 10), 103.01, '102年11月\r\n總指數: 103.01', 101.76, '102年11月\r\n總指數: 101.76'],
+				[new Date(102, 11), 103.01, '102年12月\r\n總指數: 103.01', 101.79, '102年12月\r\n總指數: 101.79'],
+				[new Date(103, 0), 103.26, '103年1月\r\n總指數: 103.26', 102.53, '103年1月\r\n總指數: 102.53'],
+				[new Date(103, 1), 103.06, '103年2月\r\n總指數: 103.06', 102.37, '103年2月\r\n總指數: 102.37'],
+				[new Date(103, 2), 103.26, '103年3月\r\n總指數: 103.26', 102.34, '103年3月\r\n總指數: 102.34'],
+				[new Date(103, 3), 103.84, '103年4月\r\n總指數: 103.84', 103.1, '103年4月\r\n總指數: 103.1'],
+				[new Date(103, 4), 103.9, '103年5月\r\n總指數: 103.9', 102.97, '103年5月\r\n總指數: 102.97'],
+				[new Date(103, 5), 104.33, '103年6月\r\n總指數: 104.33', 103.04, '103年6月\r\n總指數: 103.04'],
+				[new Date(103, 6), 104.31, '103年7月\r\n總指數: 104.31', 103.18, '103年7月\r\n總指數: 103.18'],
+				[new Date(103, 7), 104.74, '103年8月\r\n總指數: 104.74', 103.07, '103年8月\r\n總指數: 103.07'],
+				[new Date(103, 8), 104.71, '103年9月\r\n總指數: 104.71', 103.09, '103年9月\r\n總指數: 103.09'],
+				[new Date(103, 9), 104.74, '103年10月\r\n總指數: 104.74', 103.56, '103年10月\r\n總指數: 103.56'],
+				[new Date(103, 10), 103.71, '103年11月\r\n總指數: 103.71', 103.25, '103年11月\r\n總指數: 103.25'],
+				[new Date(103, 11), 103.29, '103年12月\r\n總指數: 103.29', 103.21, '103年12月\r\n總指數: 103.21'],
+				[new Date(104, 0), 102.04, '104年1月\r\n總指數: 102.04', 103.26, '104年1月\r\n總指數: 103.26'],
+				[new Date(104, 1), 102.51, '104年2月\r\n總指數: 102.51', 104.27, '104年2月\r\n總指數: 104.27'],
+				[new Date(104, 2), 102.39, '104年3月\r\n總指數: 102.39', 103.5, '104年3月\r\n總指數: 103.5'],
+				[new Date(104, 3), 102.91, '104年4月\r\n總指數: 102.91', 104.1, '104年4月\r\n總指數: 104.1'],
+				[new Date(104, 4), 103.12, '104年5月\r\n總指數: 103.12', 103.95, '104年5月\r\n總指數: 103.95'],
+				[new Date(104, 5), 103.83, '104年6月\r\n總指數: 103.83', 104.03, '104年6月\r\n總指數: 104.03'],
+				[new Date(104, 6), 103.62, '104年7月\r\n總指數: 103.62', 104.26, '104年7月\r\n總指數: 104.26'],
+				[new Date(104, 7), 104.34, '104年8月\r\n總指數: 104.34', 104.16, '104年8月\r\n總指數: 104.16'],
+				[new Date(104, 8), 105.11, '104年9月\r\n總指數: 105.11', 104.16, '104年9月\r\n總指數: 104.16'],
+				[new Date(104, 9), 104.99, '104年10月\r\n總指數: 104.99', 104.47, '104年10月\r\n總指數: 104.47'],
+				[new Date(104, 10), 104.27, '104年11月\r\n總指數: 104.27', 104.26, '104年11月\r\n總指數: 104.26'],
+				[new Date(104, 11), 103.45, '104年12月\r\n總指數: 103.45', 104.14, '104年12月\r\n總指數: 104.14'],
+				[new Date(105, 0), 102.68, '105年1月\r\n總指數: 102.68', 104.01, '105年1月\r\n總指數: 104.01'],
+				[new Date(105, 1), 104.51, '105年2月\r\n總指數: 104.51', 104.85, '105年2月\r\n總指數: 104.85'],
+				[new Date(105, 2), 104.24, '105年3月\r\n總指數: 104.24', 104.19, '105年3月\r\n總指數: 104.19'],
+				[new Date(105, 3), 104.48, '105年4月\r\n總指數: 104.48', 104.78, '105年4月\r\n總指數: 104.78'],
+				[new Date(105, 4), 104.33, '105年5月\r\n總指數: 104.33', 104.78, '105年5月\r\n總指數: 104.78'],
+				[new Date(105, 5), 104.71, '105年6月\r\n總指數: 104.71', 104.87, '105年6月\r\n總指數: 104.87'],
+				[new Date(105, 6), 104.8, '105年7月\r\n總指數: 104.8', 105.01, '105年7月\r\n總指數: 105.01'],
+				[new Date(105, 7), 104.84, '105年8月\r\n總指數: 104.84', 104.96, '105年8月\r\n總指數: 104.96'],
+				[new Date(105, 8), 105.16, '105年9月\r\n總指數: 105.16', 104.95, '105年9月\r\n總指數: 104.95'],
+				[new Date(105, 9), 106.49, '105年10月\r\n總指數: 106.49', 105.3, '105年10月\r\n總指數: 105.3'],
+				[new Date(105, 10), 106.23, '105年11月\r\n總指數: 106.23', 105.15, '105年11月\r\n總指數: 105.15'],
+				[new Date(105, 11), 105.29, '105年12月\r\n總指數: 105.29', 105.03, '105年12月\r\n總指數: 105.03'],
+				[new Date(106, 0), 105.27, '106年1月\r\n總指數: 105.27', 105.83, '106年1月\r\n總指數: 105.83'],
+				[new Date(106, 1), 105.21, '106年2月\r\n總指數: 105.21', 105.75, '106年2月\r\n總指數: 105.75'],
+				[new Date(106, 2), 104.61, '106年3月\r\n總指數: 104.61', 105.48, '106年3月\r\n總指數: 105.48'],
+			];
+			cdates = [
+				new Date(102, 0),
+				new Date(103, 0),
+				new Date(104, 0),
+				new Date(105, 0),
+				new Date(106, 0),
+			];
+			return true;
+		}
+		var cdatasX = [];
+		var cdatesX = [];
+
+		function inidataX() {
+			cdatasX = [
+				// [new Date(100,0),75771,'100年1月\r\n公司登記現有家數: 75771',93457,'100年1月\r\n商業登記現有家數: 93457'],
+				// [new Date(100,1),75833,'100年2月\r\n公司登記現有家數: 75833',93522,'100年2月\r\n商業登記現有家數: 93522'],
+				// [new Date(100,2),76084,'100年3月\r\n公司登記現有家數: 76084',93733,'100年3月\r\n商業登記現有家數: 93733'],
+				// [new Date(100,3),76262,'100年4月\r\n公司登記現有家數: 76262',94029,'100年4月\r\n商業登記現有家數: 94029'],
+				// [new Date(100,4),76484,'100年5月\r\n公司登記現有家數: 76484',94306,'100年5月\r\n商業登記現有家數: 94306'],
+				// [new Date(100,5),76606,'100年6月\r\n公司登記現有家數: 76606',94541,'100年6月\r\n商業登記現有家數: 94541'],
+				// [new Date(100,6),76797,'100年7月\r\n公司登記現有家數: 76797',94707,'100年7月\r\n商業登記現有家數: 94707'],
+				// [new Date(100,7),77058,'100年8月\r\n公司登記現有家數: 77058',94940,'100年8月\r\n商業登記現有家數: 94940'],
+				// [new Date(100,8),77168,'100年9月\r\n公司登記現有家數: 77168',95129,'100年9月\r\n商業登記現有家數: 95129'],
+				// [new Date(100,9),77427,'100年10月\r\n公司登記現有家數: 77427',95359,'100年10月\r\n商業登記現有家數: 95359'],
+				// [new Date(100,10),77530,'100年11月\r\n公司登記現有家數: 77530',95516,'100年11月\r\n商業登記現有家數: 95516'],
+				// [new Date(100,11),77672,'100年12月\r\n公司登記現有家數: 77672',95643,'100年12月\r\n商業登記現有家數: 95643'],
+				// [new Date(101,0),77689,'101年1月\r\n公司登記現有家數: 77689',95713,'101年1月\r\n商業登記現有家數: 95713'],
+				// [new Date(101,1),77824,'101年2月\r\n公司登記現有家數: 77824',95816,'101年2月\r\n商業登記現有家數: 95816'],
+				// [new Date(101,2),77978,'101年3月\r\n公司登記現有家數: 77978',96014,'101年3月\r\n商業登記現有家數: 96014'],
+				// [new Date(101,3),78257,'101年4月\r\n公司登記現有家數: 78257',96144,'101年4月\r\n商業登記現有家數: 96144'],
+				// [new Date(101,4),76484,'101年5月\r\n公司登記現有家數: 76484',96323,'101年5月\r\n商業登記現有家數: 96323'],
+				// [new Date(101,5),78552,'101年6月\r\n公司登記現有家數: 78552',96467,'101年6月\r\n商業登記現有家數: 96467'],
+				// [new Date(101,6),78734,'101年7月\r\n公司登記現有家數: 78734',96608,'101年7月\r\n商業登記現有家數: 96608'],
+				// [new Date(101,7),78910,'101年8月\r\n公司登記現有家數: 78910',96737,'101年8月\r\n商業登記現有家數: 96737'],
+				// [new Date(101,8),78991,'101年9月\r\n公司登記現有家數: 78991',96928,'101年9月\r\n商業登記現有家數: 96928'],
+				// [new Date(101,9),79179,'101年10月\r\n公司登記現有家數: 79179',97059,'101年10月\r\n商業登記現有家數: 97059'],
+				// [new Date(101,10),79255,'101年11月\r\n公司登記現有家數: 79255',97241,'101年11月\r\n商業登記現有家數: 97241'],
+				// [new Date(101,11),79225,'101年12月\r\n公司登記現有家數: 79225',97313,'101年12月\r\n商業登記現有家數: 97313'],
+				[new Date(102, 0), 79282, '102年1月\r\n公司登記現有家數: 79282', 97498, '102年1月\r\n商業登記現有家數: 97498'],
+				[new Date(102, 1), 79274, '102年2月\r\n公司登記現有家數: 79274', 97572, '102年2月\r\n商業登記現有家數: 97572'],
+				[new Date(102, 2), 79278, '102年3月\r\n公司登記現有家數: 79278', 97720, '102年3月\r\n商業登記現有家數: 97720'],
+				[new Date(102, 3), 79478, '102年4月\r\n公司登記現有家數: 79478', 97877, '102年4月\r\n商業登記現有家數: 97877'],
+				[new Date(102, 4), 79681, '102年5月\r\n公司登記現有家數: 79681', 98116, '102年5月\r\n商業登記現有家數: 98116'],
+				[new Date(102, 5), 79956, '102年6月\r\n公司登記現有家數: 79956', 98276, '102年6月\r\n商業登記現有家數: 98276'],
+				[new Date(102, 6), 80349, '102年7月\r\n公司登記現有家數: 80349', 98464, '102年7月\r\n商業登記現有家數: 98464'],
+				[new Date(102, 7), 80609, '102年8月\r\n公司登記現有家數: 80609', 98621, '102年8月\r\n商業登記現有家數: 98621'],
+				[new Date(102, 8), 80863, '102年9月\r\n公司登記現有家數: 80863', 98975, '102年9月\r\n商業登記現有家數: 98975'],
+				[new Date(102, 9), 81173, '102年10月\r\n公司登記現有家數: 81173', 99567, '102年10月\r\n商業登記現有家數: 99567'],
+				[new Date(102, 10), 81504, '102年11月\r\n公司登記現有家數: 81504', 99886, '102年11月\r\n商業登記現有家數: 99886'],
+				[new Date(102, 11), 81684, '102年12月\r\n公司登記現有家數: 81684', 100016, '102年12月\r\n商業登記現有家數: 100016'],
+				[new Date(103, 0), 81879, '103年1月\r\n公司登記現有家數: 81879', 99918, '103年1月\r\n商業登記現有家數: 99918'],
+				[new Date(103, 1), 82146, '103年2月\r\n公司登記現有家數: 82146', 99937, '103年2月\r\n商業登記現有家數: 99937'],
+				[new Date(103, 2), 82541, '103年3月\r\n公司登記現有家數: 82541', 100125, '103年3月\r\n商業登記現有家數: 100125'],
+				[new Date(103, 3), 82929, '103年4月\r\n公司登記現有家數: 82929', 100255, '103年4月\r\n商業登記現有家數: 100255'],
+				[new Date(103, 4), 83303, '103年5月\r\n公司登記現有家數: 83303', 100433, '103年5月\r\n商業登記現有家數: 100433'],
+				[new Date(103, 5), 83603, '103年6月\r\n公司登記現有家數: 83603', 100627, '103年6月\r\n商業登記現有家數: 100627'],
+				[new Date(103, 6), 83887, '103年7月\r\n公司登記現有家數: 83887', 100826, '103年7月\r\n商業登記現有家數: 100826'],
+				[new Date(103, 7), 84186, '103年8月\r\n公司登記現有家數: 84186', 100957, '103年8月\r\n商業登記現有家數: 100957'],
+				[new Date(103, 8), 84330, '103年9月\r\n公司登記現有家數: 84330', 101160, '103年9月\r\n商業登記現有家數: 101160'],
+				[new Date(103, 9), 84576, '103年10月\r\n公司登記現有家數: 84576', 101402, '103年10月\r\n商業登記現有家數: 101402'],
+				[new Date(103, 10), 84901, '103年11月\r\n公司登記現有家數: 84901', 101570, '103年11月\r\n商業登記現有家數: 101570'],
+				[new Date(103, 11), 85159, '103年12月\r\n公司登記現有家數: 85159', 101770, '103年12月\r\n商業登記現有家數: 101770'],
+				[new Date(104, 0), 85372, '104年1月\r\n公司登記現有家數: 85372', 101950, '104年1月\r\n商業登記現有家數: 101950'],
+				[new Date(104, 1), 85598, '104年2月\r\n公司登記現有家數: 85598', 102088, '104年2月\r\n商業登記現有家數: 102088'],
+				[new Date(104, 2), 85944, '104年3月\r\n公司登記現有家數: 85944', 102286, '104年3月\r\n商業登記現有家數: 102286'],
+				[new Date(104, 3), 86291, '104年4月\r\n公司登記現有家數: 86291', 102498, '104年4月\r\n商業登記現有家數: 102498'],
+				[new Date(104, 4), 86620, '104年5月\r\n公司登記現有家數: 86620', 102680, '104年5月\r\n商業登記現有家數: 102680'],
+				[new Date(104, 5), 86975, '104年6月\r\n公司登記現有家數: 86975', 102923, '104年6月\r\n商業登記現有家數: 102923'],
+				[new Date(104, 6), 87184, '104年7月\r\n公司登記現有家數: 87184', 103092, '104年7月\r\n商業登記現有家數: 103092'],
+				[new Date(104, 7), 87413, '104年8月\r\n公司登記現有家數: 87413', 103274, '104年8月\r\n商業登記現有家數: 103274'],
+				[new Date(104, 8), 87605, '104年9月\r\n公司登記現有家數: 87605', 103461, '104年9月\r\n商業登記現有家數: 103461'],
+				[new Date(104, 9), 87874, '104年10月\r\n公司登記現有家數: 87874', 103665, '104年10月\r\n商業登記現有家數: 103665'],
+				[new Date(104, 10), 88197, '104年11月\r\n公司登記現有家數: 88197', 103836, '104年11月\r\n商業登記現有家數: 103836'],
+				[new Date(104, 11), 88381, '104年12月\r\n公司登記現有家數: 88381', 103899, '104年12月\r\n商業登記現有家數: 103899'],
+				[new Date(105, 0), 88645, '105年1月\r\n公司登記現有家數: 88645', 104041, '105年1月\r\n商業登記現有家數: 104041'],
+				[new Date(105, 1), 88852, '105年2月\r\n公司登記現有家數: 88852', 104114, '105年2月\r\n商業登記現有家數: 104114'],
+				[new Date(105, 2), 89204, '105年3月\r\n公司登記現有家數: 89204', 104364, '105年3月\r\n商業登記現有家數: 104364'],
+				[new Date(105, 3), 89532, '105年4月\r\n公司登記現有家數: 89532', 104579, '105年4月\r\n商業登記現有家數: 104579'],
+				[new Date(105, 4), 89894, '105年5月\r\n公司登記現有家數: 89894', 104791, '105年5月\r\n商業登記現有家數: 104791'],
+				[new Date(105, 5), 90217, '105年6月\r\n公司登記現有家數: 90217', 104911, '105年6月\r\n商業登記現有家數: 104911'],
+				[new Date(105, 6), 90512, '105年7月\r\n公司登記現有家數: 90512', 105051, '105年7月\r\n商業登記現有家數: 105051'],
+				[new Date(105, 7), 90886, '105年8月\r\n公司登記現有家數: 90886', 105254, '105年8月\r\n商業登記現有家數: 105254'],
+				[new Date(105, 8), 91144, '105年9月\r\n公司登記現有家數: 91144', 105410, '105年9月\r\n商業登記現有家數: 105410'],
+				[new Date(105, 9), 91496, '105年10月\r\n公司登記現有家數: 91496', 105595, '105年10月\r\n商業登記現有家數: 105595'],
+				[new Date(105, 10), 91841, '105年11月\r\n公司登記現有家數: 91841', 105774, '105年11月\r\n商業登記現有家數: 105774'],
+				[new Date(105, 11), 92069, '105年12月\r\n公司登記現有家數: 92069', 105863, '105年12月\r\n商業登記現有家數: 105863'],
+				[new Date(106, 0), 92359, '106年1月\r\n公司登記現有家數: 92359', 105971, '106年1月\r\n商業登記現有家數: 105971'],
+				[new Date(106, 1), 92655, '106年2月\r\n公司登記現有家數: 92655', 106085, '106年2月\r\n商業登記現有家數: 106085'],
+			];
+			cdatesX = [
+				new Date(100, 0),
+				new Date(101, 0),
+				new Date(102, 0),
+				new Date(103, 0),
+				new Date(104, 0),
+				new Date(105, 0),
+				new Date(106, 0),
+			];
+			return true;
+		}
+
+		function drawLineStyles() {
+			//消費者物價指數的樣式設定
+			if (inidata()) {
+				var data = new google.visualization.DataTable();
+				data.addColumn('date', 'Month');
+				data.addColumn('number', '總指數');
+				data.addColumn({ type: 'string', role: 'tooltip' });
+				data.addColumn('number', '總指數(不含蔬果能源)');
+				data.addColumn({ type: 'string', role: 'tooltip' });
+				data.addRows(cdatas);
+				var options = {
+					fontSize: 13,
+					colors: ['#72ac2e', '#f47c11'], //趨勢線的顏色
+					chartArea: { left: '12%', width: '80%', height: '60%' },
+					pointsVisible: true,
+					// pointShape:{ type:'circle'},
+					// pointSize:4,
+					// 移除上兩行，改為以下四行
+					series: {
+						0: { pointShape: 'circle', pointSize: 4 },
+						1: { pointShape: 'square', pointSize: 6 },
+					},
+					lineWidth: 2,
+					title: '臺中市消費者物價指數',
+					titleTextStyle: { fontSize: 20, bold: false, },
+					legend: { textStyle: { fontSize: 15 } },
+					hAxis: { title: '年', ticks: cdates, format: 'yyy', titleTextStyle: { italic: false }, },
+					//vAxis:{ title:'指數', gridlines:{count:8} },
+					tooltip: { textStyle: { color: 'gray' }, showColorCode: true, format: 'yyy', },
+					theme: { legend: { position: 'top' }, }
+				};
+				var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+			}
+			//工商登記的樣式設定
+			if (inidataX()) {
+				var dataX = new google.visualization.DataTable();
+				dataX.addColumn('date', 'Month');
+				dataX.addColumn('number', '公司登記現有家數');
+				dataX.addColumn({ type: 'string', role: 'tooltip' });
+				dataX.addColumn('number', '商業登記現有家數');
+				dataX.addColumn({ type: 'string', role: 'tooltip' });
+				dataX.addRows(cdatasX);
+				var optionsX = {
+					fontSize: 13,
+					colors: ['#0cb1bb', '#2d6fd2'],
+					chartArea: { left: '12%', width: '80%', height: '60%' },
+					pointsVisible: true,
+					// pointShape:{ type: 'triangle'}, //20170721
+					// pointSize:7, //20170721
+					// 移除上兩行，改為以下四行
+					series: {
+						0: { pointShape: 'diamond', pointSize: 5 },
+						1: { pointShape: 'triangle', pointSize: 6 },
+					},
+					lineWidth: 1,
+					title: '臺中市工商登記',
+					titleTextStyle: {
+						fontSize: 20,
+						bold: false,
+					},
+					legend: { textStyle: { fontSize: 15 }, position: 'top' },
+					hAxis: { title: '年', ticks: cdates, format: 'yyy', italic: false, titleTextStyle: { italic: false }, },
+					vAxis: { title: '萬家', /*gridlines:{count:8},*/ format: 'decimal', titleTextStyle: { italic: false }, },
+					tooltip: { textStyle: { color: 'gray' }, showColorCode: true, format: 'yyy' },
+				};
+				var chart2 = new google.visualization.LineChart(document.getElementById('chart_div1'));
+				chart2.draw(dataX, optionsX);
+			}
+		}
+	</script>
+</body>
+
+</html>
