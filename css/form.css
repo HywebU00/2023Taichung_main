@@ -1,0 +1,259 @@
+/* CSS Document */
+form{margin:0;padding:0;font-size:1em;}
+form table{border:none;border-collapse:collapse;margin:0 auto;line-height:1.6;width: 600px;max-width:90%;}
+form caption{text-align:left;font-size:1.08em;padding:0 0 .8em;color:#000;}
+form th,
+form td{padding:.5em 0;vertical-align:top;}
+form td.beforeRaw {vertical-align:bottom;padding:.8em 0 0;}
+form th,
+form td:first-child{text-align:right;font-weight:normal;max-width:15em;padding-right:.4em;line-height:2.5em;}
+form td p{line-height:120%;margin:.3em 0 .5em;}
+form td:last-child label{display:inline-block;margin:.1em .8em .5em .5em;line-height:2.2em;}
+input,
+select,
+textarea{font-size:1em;margin:0;vertical-align:top;}
+select{outline:none;max-width:100%;/*-webkit-appearance:none;*/}
+input[type="text"],
+textarea{-webkit-appearance:none;}
+input[type="radio"],
+input[type="checkbox"]{margin-right:.3em; vertical-align:middle;line-height:2.4em;}
+td>input[type="radio"],
+td>input[type="checkbox"]{margin-left:1em;}
+td>input[type="radio"]:first-child,
+td>input[type="checkbox"]:first-child{margin-left:0;padding:0;min-height:0;}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="time"],
+input[type="date"],
+input[type="week"],
+input[type="month"],
+input[type="url"],
+input[type="email"],
+input[type="file"],
+input.text,
+textarea,
+input[type="file"],
+select{border:solid 1px #bbb;height:2.4em;line-height:2.4;padding:0 .4em;margin:.1em .2em .1em 0;box-sizing: border-box;}
+textarea,
+td input:only-child,
+td select:only-child{width: 100%}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus{border-color:#729e07;box-shadow:#c5e62d 0 0 0 3px;outline:none;}
+input[type="file"]{-webkit-appearance:none;width:12em;line-height:2.4;height:2.4em;}
+input.long{width:360px;}
+input.short{width:120px;}
+input.button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]{height:2em;line-height:1.3em;margin:0 3px 0 0;cursor:pointer;border:none;}
+textarea{min-height:8em;line-height:1.6;resize: vertical;}
+
+@media (max-width:1000px){
+	form td{width:auto;}
+}
+@media (max-width:800px){
+	form table{width:100%;max-width: 600px;}
+	form th,
+	form td{display:block;text-align:left;font-weight:normal;max-width:none;width:100%;}
+	form th,
+	form td:first-child{padding:.2em 0 0;line-height:1.6;color:#677;text-align: left;max-width: none;}
+	form td{padding-top:0;}
+	input[type="text"],
+	input[type="password"],
+	input[type="tel"],
+	input[type="number"],
+	input[type="time"],
+	input[type="date"],
+	input[type="week"],
+	input[type="month"],
+	input[type="url"],
+	input[type="email"],
+	input[type="file"],
+	input.text,
+	input.long,
+	input.short,
+	textarea,
+	select {width:100%;}
+	textarea {height:12em;line-height:1.6;}
+	input[type="radio"],
+	input[type="checkbox"]{font-size:1.2em;}
+}
+@media (max-width:600px){
+}
+
+
+.center .buttonDiv{border-top:solid 1px #999;margin:1.5em 16px 0;padding:1.5em 0 0;text-align:center;}
+.center .buttonDiv input[type="submit"],
+.center .buttonDiv input[type="button"],
+.center .buttonDiv input[type="reset"]{-webkit-appearance:none;display:inline-block;height:2.4em;line-height:1.8em;padding-left:16px;padding-right:16px;margin:0 6px 10px;min-width:5em;border-radius:5px;background:#7faf0b;color:#fff;font-size:1.06em;box-shadow:#587320 0 4px,	#112 0 6px 0,rgba(0,0,0,.5) 0 6px 6px 1px;transition:.1s;}
+.center .buttonDiv input[type="submit"]:hover,
+.center .buttonDiv input[type="button"]:hover,
+.center .buttonDiv input[type="reset"]:hover,
+.center .buttonDiv input[type="submit"]:focus,
+.center .buttonDiv input[type="button"]:focus,
+.center .buttonDiv input[type="reset"]:focus{background-color:#99c300;}
+.must{margin-right:3px;color:#C30;font-size: 1.5em;text-decoration: none;}
+
+.extraBtn{clear:both;float:right;margin:0;}
+.extraBtn a{display:inline-block;margin:0 2px 6px;min-width:0;border-radius:2em;text-align:center;font-size:1em;line-height:2.2em;height:2.2em;padding:0 1em;background-color:#91c000;color:#fff;text-decoration:none;transition:.2s;}
+.extraBtn a:hover{background:#639100;color:#fff;}
+.extraBtn a:focus{background:#639100;color:#fff;}
+.note .extraBtn a{background-color:#f80;color:#fff;}
+.note .extraBtn a:hover{background-color:#e60;}
+.note .extraBtn a:focus{background-color:#e60;}
+.note a{word-break:break-all;}
+.note em{color:#380 }
+
+/*---------------forwardForm */
+.qp form,
+.forwardForm form{padding:2.5em 0 2.5em;border:1px solid #ccc;}
+.forwardForm{margin:0 0 2em;padding:0 0 1em;overflow:hidden;}
+.forwardForm th{white-space:nowrap;}
+.forwardForm input[type="text"],
+.forwardForm input[type="password"],
+.forwardForm input.text,
+.forwardForm textarea{width:24em;}
+.forwardForm input.short{width:8em;}
+.forwardForm textarea{height:9.5em;overflow:auto;}
+.forwardForm textarea.address {min-height:0;height:3.6em;}
+.forwardForm select {max-width:25em;}
+.forwardForm caption .must{float:right;font-size:.8em;color:#c00;}
+
+.refresh{display:inline-block;vertical-align:top;margin:5px 0 0 6px;}
+.refresh a{display:block;background:url(../images/btn_refresh.png) no-repeat 0 0;padding:10px 0 12px 37px;font-size:1em;letter-spacing:0;text-decoration:none;}
+.forwardForm form caption {display:none;}
+.forwardForm form>p {margin:0 1.5em 1.5em;}
+.magList{margin:0 auto;}
+form td .magList p{margin:0 0 1.5em;line-height:1.6;}
+.magList label{display:block;margin:.5em 0;font-size:1.2em;}
+
+.membFunc {list-style:none;margin:6px 0;padding:0;}
+.membFunc li {display:inline-block;margin-right:1px;}
+.membFunc a {display:block;height:2.4em;line-height:2.4em;border:1px solid #ccc;padding:0 1em;min-width:7em;text-align:center;text-decoration:none;box-sizing:border-box;}
+.membFunc a:hover,
+.membFunc a:focus{background-color:#7c8785;border-color:#7c8785;color:#e5ff0c;}
+
+
+.forgetPassword form>p{text-align: center;}
+.forgetPassword fieldset {width: 30em;margin: 1.5em auto ;padding: .8em 0;border: none;}
+.forgetPassword legend{font-size: 1.05em;text-align: left;font-weight: normal;}
+.forgetPassword fieldset label{display: inline-block;width: 6em;height: 2.4em;line-height: 2.7em;text-align: right;margin-right: .5em;}
+.forgetPassword fieldset input[type="text"]{width: 20em;}
+.forgetPassword fieldset:first-of-type {margin-top: 3em;}
+
+.identity {width: 25em;margin: 0 auto 2em;}
+.identity input[type="text"],
+.identity input[type="password"]{width: 24em;}
+.identity label{display: block;margin-top: 1em;font-size: 1.1em;letter-spacing: .5em;font-weight: normal;}
+
+div.captcha {width: 40em;border-top: 1px dotted #bbb;padding-top: 2em;margin: 0 auto;text-align: center;}
+
+
+
+
+
+
+
+.note{margin:0 0 2.5em;padding:2.5em 0 2.5em;border-width:1px;line-height:1.8;background:#fe8;box-shadow:rgba(150,120,0,.25) 0 0 60px inset;}
+.note h2, .note h3{font-size:1.2em;margin:0 2em 1em;}
+.note ol,.note ul{margin:0 2em 0 1em;}
+.note li{margin-bottom:1.2em;}
+.note p{margin:1em 2em;}
+.note a{color:#f50;text-decoration:underline;}
+
+.forwardForm .note{position:relative;float:left;width:39%;}
+.forwardForm .note .extraBtn{margin:0 5px 0;}
+.forwardForm .note .extraBtn a{color:#ffc;text-decoration:none;}
+.forwardForm .note + form{width:58%;float:right;margin-right:5px;}
+.forwardForm .note:before{content:'';position:absolute;width:90%;height:25px;border-radius:50%;bottom:0;left:5%;background:#ccc;box-shadow:rgba(0,0,0,.6) 0 0 20px;z-index:-1;}
+
+a[title="換一組驗證碼"],
+a[href="javascript:resetCaptchaA();"]{display:inline-block;margin:0 5px 8px;width:40px;height:40px;background:#F90 url(../images/refresh.png) no-repeat 8px center;border-radius:50%;vertical-align:middle;}
+a[title="換一組驗證碼"]>img,
+a[href="javascript:resetCaptchaA();"]>img {visibility: hidden;}
+form input#strCAPTCHA,
+form input[type="text"].captchaTxt{margin-bottom:1em;width: 12em;height: 2.4em;line-height: 2.4em;}
+/*----------------------qp*/
+.center .qp header{margin:0 3px 3px;border:none;}
+.qp input[type="text"]{width:24em;}
+.qp input.short{width:8em;}
+.qp th{min-width:6em;max-width:9em;white-space:nowrap;}
+.qp table{width:44em;margin:0 auto;}
+.qp td input[value="清除"]{width:24px;height:24px;margin:0 8px 0 0;color:transparent;background:transparent url(../images/btn_reset.png) no-repeat;border:none;}
+/*----------------------qp forwardForm 共用*/
+.center .qp header,
+.center .forwardForm header{margin:0 3px 3px;border:none;}
+@media (max-width:1120px){
+	.forwardForm{margin:30px;}
+}
+@media (max-width:1000px){
+	.forwardForm .note,
+	.forwardForm .note + form{float:none;width:100%;margin:1em 0 0;border:none;box-shadow:none;}
+	.forwardForm .note{background:#f3f5f6;margin:0;}
+	/* .forwardForm .extraBtn, */
+	.forwardForm .note:before{display:none;}
+	.extraBtn{margin-top:10px;}
+}
+@media (max-width:800px){
+	.forwardForm form {margin:0;padding:0;border:none;}
+	.forwardForm input[type="text"],
+	.forwardForm input.text,
+	.forwardForm textarea,
+	.forwardForm select {width:100%;max-width:none;}
+	.forwardForm {margin:0;}
+	.forwardForm table {width:94%;margin:0 auto;}
+	.forwardForm form>p {margin:1em 16px 1.5em;}
+
+	.center .buttonDiv{margin-left:0;margin-right:0}
+	.center .buttonDiv input[type="submit"],
+	.center .buttonDiv input[type="button"],
+	.center .buttonDiv input[type="reset"]{font-size:1em;}
+	.membFunc{text-align:center;width:94%;margin:1.5em auto 0;}
+	.membFunc li{width:48%;margin:0}
+
+	img#imgCaptcha{width:280px;height:auto;}
+	img#imgCaptcha + input[type="text"] {margin-left:8px;width:12em;vertical-align:top;}
+}
+
+.searchInlp{position: relative;margin: 0 auto 15px;padding: 0 20px;clear: both;min-height: 50px;background: #f4f2e8;border-radius: 6px}
+.searchInlp .toggleArea{padding: 0 0 20px;display: none;}
+.searchInlp .caption{color: #000;font-size: 1.08em;display: inline-block;line-height:50px;width: 100%;}
+.searchInlp .toggleArea caption{display: none}
+.searchInlp .toggleArea label{
+	white-space: nowrap
+}
+.searchInlp .slideCtrl{position: absolute;top: 3px;right:16px;background: none;}
+.searchInlp .slideCtrl:focus,
+.searchInlp .slideCtrl:hover{background:#e3e6dd;box-shadow: none}
+.searchInlp .slideCtrl:focus{box-shadow:#587320 0 0 0 1px}
+.searchInlp .slideCtrl:active{background: #bd3;}
+/* .searchInlp .slideCtrl.closed{top: 3px} */
+
+.searchInlp textarea{height: 3.3em;min-height:0;}
+/* date range, 起訖日 */
+.dateRange input{vertical-align: middle;margin:0 0 8px;}
+.dateRange input[type="date"],
+.dateRange input[type="text"]{width: 12em;padding-right:.1em;margin-right: 3px;}
+/* button to clear input value, usually date. 清除日期 button */
+.dateRange input[type="button"]{width: 2.2em;height: 2.2em;padding: 0;text-indent: -5em;border-radius: 50%;background: #e3e6dd url(../images/searchClose.png) no-repeat center center;background-size: 88%;transition: .2s;}
+.dateRange input[type="button"]:hover,
+.dateRange input[type="button"]:focus{background-color: #c5e62d;box-shadow: #729e07 0 0 0 2px;}
+@media (max-width:1120px){
+	.searchInlp{margin-left: 30px;margin-right: 30px;}
+}
+@media (max-width:1000px){
+	.searchInlp{margin:0 auto;width: auto;padding: 0 2vw;border-radius: 0}
+	.searchInlp .slideCtrl{right:3px;}
+	.searchInlp .slideCtrl:hover,
+	.searchInlp .slideCtrl:focus{background: none;box-shadow: none;}
+	.preface + .searchInlp{margin-top: -1em;border-top: 1px solid #ddd;border-radius: 0;}
+}
+@media (max-width:800px){
+	.searchInlp{margin: 0 auto;padding: 0 3vw;}
+}

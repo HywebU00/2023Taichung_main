@@ -1,0 +1,5 @@
+.infographics{background: #eaf0f2;overflow: hidden;padding: 20px 0;}
+.infographics .chart{width: 49.5%;float: left;background: #fff;margin: 0 .1%;}
+.infographics .chart:last-child{float: right;}
+.infographics .chart>div{height: 400px;}
+.infographics .chart p{font-size: .87em;margin: 0 1em;}

@@ -1,0 +1,51 @@
+/*活動行事曆 功能介面調整*/
+.eventSearch{text-align:left; background: #ffe;overflow: auto;}
+.eventSearch .oneDay{font-size:1em;margin:.6em 0;}
+.eventSearch .oneDay button{font-size:inherit;line-height:2;padding:0 0 0 .6em;margin:0 1px 7px;border:none;border-radius:5px; background:#e9f0d0;cursor:pointer;overflow:hidden;transition: .2s;}
+.eventSearch .oneDay button.today{position: relative;padding-left: 2em;}
+.eventSearch .oneDay button.today:before{content:"今天";position: absolute;left: 0;top: 0;bottom: 0;width: 1.2em;background:#97a37b;color:#fff;}
+
+.eventSearch .oneDay button .day:before{content:"（"}
+.eventSearch .oneDay button .day:after{content:"）"}
+.eventSearch .oneDay button:hover{background:#7faf0b;color:#fff;box-shadow:rgba(0,0,0,.3) 0 2px 6px;}
+.eventSearch .oneDay button.today:hover:before{background:#317007;}
+
+/*
+.oneDay .moreDayPrev,
+.oneDay .moreDayNext{display:inline-block;vertical-align:middle;position:relative;padding: 2px 5px;}
+.oneDay .moreDayPrev{margin-left:1em;}
+.oneDay .moreDayPrev a,
+.oneDay .moreDayNext a{display:block;width:11px;height:11px;border:3px solid #7c8785;transform:rotate(45deg);}
+
+.oneDay .moreDayPrev a {border-top:none;border-right:none;}
+.oneDay .moreDayNext a {border-bottom:none;border-left:none;}
+
+.oneDay .moreDayPrev:before, .oneDay .moreDayNext:before{position:absolute;white-space:nowrap;bottom:120%;left:-2.5em;line-height:0;color:#317007;opacity:0;overflow:hidden;transition:.2s;background-color: rgba(255,255,255,.6);}
+.oneDay .moreDayPrev:before{content:"往前七天";}
+.oneDay .moreDayNext:before{content:"往後七天";left:0;}
+.oneDay .moreDayPrev:hover:before,
+.oneDay .moreDayNext:hover:before{opacity:1;line-height:1}*/
+
+.eventSearch form .buttonDiv{float:right;margin-top:-4em;}
+
+.filterBy{margin:1.2em 0 -.5em;line-height:1.3;clear:both;}
+.filterBy em{color:#000;font-size:1.15em;}
+.filterBy em:empty:before{content:"*";}
+
+@media screen and (max-width: 1023px) {
+
+	.eventSearch {margin: 10px auto;width: 94%;}
+
+
+	.eventSearch form{text-align: left;overflow: hidden;}
+	.eventSearch form>input[type="text"],
+	.eventSearch select {width: 30%;}
+
+	.eventSearch label input{width: 40%;}
+	.eventSearch form>label {margin-left:0;display: block;}
+
+	.filterBy{margin:10px auto;width: 94%;}
+
+	.eventSearch form .buttonDiv{float: none;display: block;margin: 0 auto;padding: 12px 0;}
+	.eventSearch form .buttonDiv input{font-size: 1em;font-size: inherit;}
+}
