@@ -635,32 +635,30 @@
 .listTable td a{ text-decoration: underline;}
 .listTable td a:hover, .listTable td a:focus { color: var(--linkBlue);}
 .listTable td a:focus{ text-decoration: none; outline: 1px solid var(--linkBlue);}
-.listTable td time, .listTable td .date{ display: inline-block; white-space: nowrap;}
+.listTable td time, .listTable td .date, .listTable td .from { display: inline-block; white-space: nowrap;}
 .listTable td.numb::after{ content: '.';}
 .listTable td.title{text-align:left; font-size: 1.25em;}
 
 @media screen and (max-width: 1000px){
 	.listTable{border-top:2px solid #ccc;border-bottom:2px solid #ccc;}
 	.listTable thead{ display: none;}
-	.listTable td.vanishCell { display: none;}
 	.listTable tr {display: block;padding:.8em .7em .6em 3.2em;border-bottom:1px solid #ccc;}
 	.listTable td { display: inline-block;border: none;padding: 2px 0;margin-right: .8em; text-align: left;}
 	.listTable td:last-child{margin-right: 0;}
-	/* .listTable td a:focus{background-color: var(--linkBlue); color: #fff;} */
 	.listTable td.title{ display: inline;}
 	.listTable td.numb{text-align: right;min-width: 2.5em; margin-right: .4em; margin-left: -3.1em;}
-	.listTable td.numb + td { }
+	.listTable td .from {white-space: normal;}
 }
 
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */
-/* 2023 新作查詢區 */
+/* 2023 新作查詢區（＊＊ 作廢 ＊＊） */
+/* 
 .searchDv{margin: 0 auto; padding: 14px 0;background-color: #f4f2e8;}
 .searchDv .flexBox {margin: 0 auto;width: 96%;}
 .searchDv .flexBox label{
 	margin: 8px 0; display: flex; align-items: center;
-	/* outline: 1px solid pink; */
 }
 .searchDv .flexBox label>input, 
 .searchDv .flexBox label>select,
@@ -673,7 +671,6 @@
 	.searchDv .flexBox>label:first-child {margin-left: 0;}
 	.searchDv .flexBox>label.timeSpan{ flex: 1 1 100%; margin-left: 0;}
 	.searchDv .flexBox>label .dateRange2 { width: 10em;}
-	/* .searchDv .flexBox label>input{ flex: 0 0 6em; width: auto;}  */
 	.searchDv .flexBox label>select{ flex: 1 1 6em; width: 6em;}
 }
 @media screen and (min-width: 1001px){
@@ -685,7 +682,7 @@
 	.searchDv .flexBox label>input, 
 	.searchDv .flexBox label>select{ flex: 1 1 6em; width: 6em;}
 }
-
+ */
 
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */
@@ -695,6 +692,5 @@
 .dateRange2 input[type="text"],
 .dateRange2 input[type="date"] {flex: 0 1 calc(50% - .8em); width:auto !important; margin: 0; min-width: 0;}
 .dateRange2 input:first-child{ margin-right: 1.6em;}
-.dateRange2 input:last-child{}
-.dateRange2 {}
+
 

@@ -257,3 +257,41 @@ form input[type="text"].captchaTxt{margin-bottom:1em;width: 12em;height: 2.4em;l
 @media (max-width:800px){
 	.searchInlp{margin: 0 auto;padding: 0 3vw;}
 }
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+
+/* 2023 新作查詢區－２：以 table 排版 */
+/* .searchDv table.searchLayout */
+.searchDv{margin: 0 auto 15px; padding: 14px 0;background-color: #f4f2e8;}
+.searchDv table.searchLayout{ width: 94%; max-width: none;}
+.searchDv table.searchLayout tbody { display: flex; flex-flow: nowrap row; justify-content: space-between;}
+.searchDv table.searchLayout tr{
+	flex: 1 1 21%; width: auto; margin: 0 0 0 15px;
+	display: flex;flex-flow: nowrap row; align-items: center;
+}
+.searchDv table.searchLayout tr.timeSpan { flex: 1 1 35%;}
+.searchDv table.searchLayout tr:first-child {margin-left: 0;}
+.searchDv table.searchLayout td:first-child {white-space: nowrap; flex: 1 1 auto;}
+.searchDv table.searchLayout td:last-child {flex: 1 1 calc(100% - 3em);}
+.searchDv table.searchLayout td input[type="text"],
+.searchDv table.searchLayout td select { margin: 0; width: 100%;}
+
+@media screen and (max-width: 1000px){
+	.searchDv {margin-bottom: 0;}
+	.searchDv table.searchLayout tbody{flex-wrap: wrap;}
+	.searchDv table.searchLayout tr {
+		flex: 1 1 calc( 30% - 10px); margin: 5px 0 5px 15px; 
+	}
+	.searchDv table.searchLayout td:first-child {white-space: nowrap; flex: 1 1 auto;padding: 0 8px 0 0; width: auto; color:#333; }
+	.searchDv table.searchLayout td:last-child{padding: 0;}
+	.searchDv table.searchLayout tr.timeSpan{margin-left: 0;}
+}
+@media screen and (max-width: 600px){
+	.searchDv table.searchLayout tbody {display: table-row-group;}
+	.searchDv table.searchLayout tr {display: table-row;}
+	.searchDv table.searchLayout td:first-child { display: table-cell; padding: 11px 8px 0 0; width: auto;}
+	.searchDv table.searchLayout td:last-child{ padding: 5px 0; width: auto;}
+}
