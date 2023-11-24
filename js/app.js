@@ -670,8 +670,8 @@ $(function() {
     })
     //條列頁無窮載入
     if (ww <= 800) {
-        $('.list, .thumbnail').jscroll({
-            contentSelector: '.list, .thumbnail'
+        $('.list, .thumbnail, .listTable').jscroll({
+            contentSelector: '.list, .thumbnail, .listTable'
         });
     }
     //施政計畫、報告、白皮書
