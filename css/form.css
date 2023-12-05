@@ -278,7 +278,7 @@ form input[type="text"].captchaTxt{margin-bottom:1em;width: 12em;height: 2.4em;l
 .searchDv table.searchLayout td:last-child {flex: 1 1 calc(100% - 3em);}
 .searchDv table.searchLayout td input[type="text"],
 .searchDv table.searchLayout td select { margin: 0; width: 100%;}
-
+table.searchLayout ~ .buttonDiv { margin-top: 5px; padding-top: 15px;}
 @media screen and (max-width: 1000px){
 	.searchDv {margin-bottom: 0;}
 	.searchDv table.searchLayout tbody{flex-wrap: wrap;}
