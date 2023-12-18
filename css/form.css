@@ -263,6 +263,19 @@ form input[type="text"].captchaTxt{margin-bottom:1em;width: 12em;height: 2.4em;l
 /* --------------------------------------------------------------- */
 
 
+/* 日期範圍（起訖日）| 2023 新作*/
+.dateRange2 {position: relative; display: flex; justify-content: space-between; align-items: center;}
+.dateRange2::before { content: '～'; position: absolute; top: 0; left: calc(50% - .6em); width: 1.2em; height: 2.2em; line-height: 2.3; text-align: center;}
+.dateRange2 input[type="text"],
+.dateRange2 input.datepicker,
+.dateRange2 input[type="date"] {flex: 0 1 calc(50% - .8em); width:calc(50% - .8em) !important; margin: 0; min-width: 0;}
+.dateRange2 input:first-child{ margin-right: 1.6em;}
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+
 /* 2023 新作查詢區－２：以 table 排版 */
 /* .searchDv table.searchLayout */
 .searchDv{margin: 0 auto 15px; padding: 14px 0;background-color: #f4f2e8;}
