@@ -632,7 +632,7 @@
 .listTable td{padding:.8em .7em .7em;vertical-align:middle;border-bottom:1px solid #ccc;text-align:center;}
 .listTable th{white-space:nowrap;background:#f0f4f5;border-top:2px solid #ccc;}
 .listTable td{border-bottom:1px dotted #ccc;}
-.listTable td a{ text-decoration: underline;}
+.listTable td a{ text-decoration: none; color: #000;}
 .listTable td a:hover, .listTable td a:focus { color: var(--linkBlue);}
 .listTable td a:focus{ text-decoration: none; outline: 1px solid var(--linkBlue);}
 .listTable td time, .listTable td .date, .listTable td .from { display: inline-block; white-space: nowrap;}
