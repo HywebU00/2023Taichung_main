@@ -637,7 +637,7 @@
 .listTable td a:focus{ text-decoration: none; outline: 1px solid var(--linkBlue);}
 .listTable td time, .listTable td .date, .listTable td .from { display: inline-block; white-space: nowrap;}
 .listTable td.numb::after{ content: '.';}
-.listTable td.title{text-align:left; font-size: 1.25em;}
+.listTable td.title{text-align:left;}
 
 @media screen and (max-width: 1000px){
 	.listTable{border-top:2px solid #ccc;border-bottom:2px solid #ccc;}
