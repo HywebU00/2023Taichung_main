@@ -340,23 +340,68 @@ $(function() {
             _goTop.stop().fadeOut("fast");
         }
     });
+
+
     // Fatfooter, qrCode 開合
-    $(function() {
-        $('.fatfootCtrl .btn-fatfooter').click(function(e) {
-            $(this).parents('.footer').find('nav>ul>li>ul').stop(true, true).slideToggle(function() {
-                if ($(this).is(':visible')) {
-                    $('.btn-fatfooter').html('收合/CLOSE');
-                    $('.btn-fatfooter').attr('name', '收合選單/CLOSE');
-                    $('.qrcode').slideDown(100);
-                } else {
-                    $('.btn-fatfooter').html('展開/OPEN');
-                    $('.btn-fatfooter').attr('name', '展開選單/OPEN');
-                    $('.qrcode').slideUp(100);
-                }
-            });
-            $(this).stop(true, true).toggleClass('close');
-        });
-    });
+    // $(function() {
+    //     $('.fatfootCtrl .btn-fatfooter').click(function(e) {
+    //         $(this).parents('.footer').find('nav>ul>li>ul').stop(true, true).slideToggle(function() {
+    //             if ($(this).is(':visible')) {
+    //                 $('.btn-fatfooter').html('收合/CLOSE');
+    //                 $('.btn-fatfooter').attr('name', '收合選單/CLOSE');
+    //                 $('.qrcode').slideDown(100);
+    //             } else {
+    //                 $('.btn-fatfooter').html('展開/OPEN');
+    //                 $('.btn-fatfooter').attr('name', '展開選單/OPEN');
+    //                 $('.qrcode').slideUp(100);
+    //             }
+    //         });
+    //         $(this).stop(true, true).toggleClass('close');
+    //     });
+    // });
+
+    // ---------- 2024 無障礙修改 ---------- //
+    // Fatfooter, qrCode 開合 
+    var _footer = $('footer.footer');
+    var _fatfootCtrlBtn = _footer.find('button.btn-fatfooter');
+    var _footerNav = _footer.find('nav>ul>li>ul');
+    var _footerQrcode = _footer.find('.qrcode');
+
+    if ( _footerNav.first().is(':visible') ) {
+        _fatfootCtrlBtn.removeClass('close').attr('aria-expanded', true);
+    } else {
+        _fatfootCtrlBtn.addClass('close').attr('aria-expanded', false);
+    }
+
+    _fatfootCtrlBtn.click( function(){
+        if (_footerNav.first().is(':visible')) {
+            _footerNav.add(_footerQrcode).stop().slideUp(400);
+            _fatfootCtrlBtn.addClass('close').attr('aria-expanded', false);
+        } else {
+            _footerNav.add(_footerQrcode).stop().slideDown(400);
+            _fatfootCtrlBtn.removeClass('close').attr('aria-expanded', true);
+        }
+    })
+
+
+    // ---------- 2024/5 無障礙修改 ---------- //
+    // 分頁顯示筆數 select 元件加 aria-label 屬性（2024 無障礙修改）
+    $('.page').find('select').attr('aria-label', '每頁顯示筆數');
+
+
+    // ---------- 2024/5 無障礙修改 ---------- //
+    // .searchDv input, select 加 aria-label 屬性
+    var _searchTb = $('.searchDv').find('table.searchLayout');
+    var _searchLabelTd = _searchTb.find('td:first-child');
+    var _dateRange = _searchTb.find(".dateRange2");
+    _searchLabelTd.each( function(){
+        let _this = $(this);
+        _this.next('td').children('input, select').attr('aria-label', _this.text());
+    })
+    _dateRange.find('input[type="date"]').first().attr('aria-label', '日期範圍：起日');
+    _dateRange.find('input[type="date"]').last().attr('aria-label', '日期範圍：訖日');
+
+
     // 小廣告輪播，水平
     $('.adBlockH').each(function() {
         var _adSlide = $(this),
@@ -420,6 +465,7 @@ $(function() {
             _pauseArea.hover(function() { clearInterval(autoAdSlide); }, function() { autoAdSlide = setInterval(slideForward, timer); });
         }
     });
+
     // 資料大類開合
     var _category = $('.category');
     var _categoryList = _category.find('ul');

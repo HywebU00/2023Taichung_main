@@ -262,16 +262,26 @@ noscript .command{font-weight:bold;text-decoration:underline;}
 .fatfootCtrl input:focus{opacity:1;background-color:#fff;border-color:#888;outline:none;box-shadow:#666 0 0 4px;} */
 
 .fatfootCtrl .btn-fatfooter{
-	font-size: .813em;display: block;width:44px;height:32px;color: #FFF;border: none;background: #fff;text-indent: -9999px;border-radius: 4px;position: relative;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-
+	font-size: .813em;display: block;width:44px;height:32px;color: #FFF;border: none;background: #fff;text-indent: -9999px;border-radius: 4px;position: relative;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	cursor: pointer;
 }
-.fatfootCtrl .btn-fatfooter:before{
-		content: "";position: absolute;width: 12px;height: 12px;border: 5px solid #777;border-left: none;border-bottom: none;transform: rotate(-45deg);left: 50%;top: 12px;margin-left: -8px;transition: .3s ease-out;
+.fatfootCtrl .btn-fatfooter::before{
+		content: "";position: absolute;width: 12px;height: 12px;
+		border: 5px solid #7c8785;border-left: none;border-bottom: none;
+		transform: rotate(-45deg);left: 50%;top: 12px;margin-left: -8px;
+		transition: transform .4s, top .4s, border-color .1s;
 }
-.fatfootCtrl .btn-fatfooter:hover, .fatfootCtrl .btn-fatfooter:focus {
-	background: #fff;color: #fff;text-decoration: none;cursor: pointer;border: none;outline: none;border: none;cursor: pointer;
+.fatfootCtrl .btn-fatfooter:hover,
+.fatfootCtrl .btn-fatfooter:focus {
+	background: #7c8785;text-decoration: none;outline: none;border: none;
 }
-.fatfootCtrl .btn-fatfooter.close:before{
+.fatfootCtrl .btn-fatfooter:focus{ box-shadow: #ac0 0 0 0 3px;}
+.fatfootCtrl .btn-fatfooter:hover::before,
+.fatfootCtrl .btn-fatfooter:focus::before {
+	border-color: #fff;
+}
+.fatfootCtrl .btn-fatfooter.close::before{
 	transform: rotate(135deg) !important;top: 5px;
 } 
 .no-js .fatfootCtrl{display:none;}
