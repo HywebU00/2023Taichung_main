@@ -327,8 +327,10 @@ $(function() {
     //  }
     // }
     //  20190507 移除
-    //gotop
+
+    //gotop 
     _goTop = $('.goTop');
+    _goTop.children('a').attr('role', 'button');// 2024 無障礙修改
     _goTop.click(function(e) {
         $('html').add(_body).stop(true, false).animate({ scrollTop: 0 }, 700);
         e.preventDefault();
